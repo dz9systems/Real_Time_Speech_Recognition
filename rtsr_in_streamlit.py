@@ -34,7 +34,7 @@ def stop_listening():
 	st.session_state['run'] = False
 
 
-st.title('Real-time Audio Transcription')
+st.title('Get real-time transcription')
 
 start, stop = st.columns(2)
 start.button('Start listening', on_click=start_listening)
