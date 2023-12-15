@@ -11,13 +11,13 @@ if 'text' not in st.session_state:
 	st.session_state['text'] = 'Listening...'
 	st.session_state['run'] = False
 
- 
+
 FRAMES_PER_BUFFER = 3200
 FORMAT = pyaudio.paInt16
 CHANNELS = 1
 RATE = 16000
 p = pyaudio.PyAudio()
- 
+
 # starts recording
 stream = p.open(
    format=FORMAT,
@@ -34,7 +34,7 @@ def stop_listening():
 	st.session_state['run'] = False
 
 
-st.title('Get real-time transcription')
+st.title('Real-time Audio Transcription')
 
 start, stop = st.columns(2)
 start.button('Start listening', on_click=start_listening)
@@ -42,10 +42,10 @@ start.button('Start listening', on_click=start_listening)
 stop.button('Stop listening', on_click=stop_listening)
 
 URL = "wss://api.assemblyai.com/v2/realtime/ws?sample_rate=16000"
- 
+
 
 async def send_receive():
-	
+
 	print(f'Connecting websocket to url ${URL}')
 
 	async with websockets.connect(
@@ -102,7 +102,7 @@ async def send_receive():
 				except Exception as e:
 					print(e)
 					assert False, "Not a websocket 4008 error"
-			
+
 		send_result, receive_result = await asyncio.gather(send(), receive())
 
 
