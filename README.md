@@ -1,4 +1,5 @@
 # Real-time Audio Transcription using AssemblyAI WebSocket
+https://github.com/dz9systems/Real_Time_Speech_Recognition/assets/77218260/86db39ca-05fb-4689-8a52-c169201ed926
 
 ## Project Overview
 This project focuses on implementing a real-time audio transcription system using the AssemblyAI WebSocket API. The application captures audio data from a microphone, encodes it in base64, and sends it to the AssemblyAI endpoint for transcription in real-time. The transcription results are then processed and printed to the console.
