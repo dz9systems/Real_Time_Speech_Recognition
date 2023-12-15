@@ -1,0 +1,6 @@
+openai
+pyaudio
+gTTS
+assemblyai[extras]
+websocket-client
+streamlit
