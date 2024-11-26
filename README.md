@@ -51,10 +51,12 @@ This project focuses on implementing a real-time audio transcription system usin
 
 - ***Execute the code in speech_recognition.py file:***
   ```bash
-        python3 speech_recognition.py
-        
+      
+        python3 newSpeechApp.py
+
 - ***Execute the code in rtsr_in_streamlit.pyfile:***
   ```bash
-        streamlit run rtsr_in_streamlit.py
+
+        streamlit run  newSpeechApp.py
 
 

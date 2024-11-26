@@ -4,3 +4,5 @@ gTTS
 assemblyai[extras]
 websocket-client
 streamlit
+python-dotenv
+openai
